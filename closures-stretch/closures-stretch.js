@@ -18,9 +18,6 @@ var wrapLog = function (callback, name) {
 
   return function(...xyz) {
     console.log(callback(...xyz));
-    console.log(xyz[0]);
-    console.log(xyz[1]);
-    console.log(xyz[2]);
   }
 
 };
